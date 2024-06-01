@@ -16,8 +16,7 @@ def testing_model_algorithm():
     # Your code here
     RFC = RandomForestClassifier()
     model = RFC.fit(X_train, y_train)
-    return model
-    assert model == RFC, 'The model does not use the RandomForestClassifier algorithm'
+    assert isinstance(model, type(RFC)), 'The model does not use the RandomForestClassifier algorithm'
 
 
 # TODO: implement the second test. Change the function name and input as needed
